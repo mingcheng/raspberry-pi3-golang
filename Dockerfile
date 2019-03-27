@@ -8,7 +8,7 @@ ENV CHECK_SUM "39c2d4396c460658ece9bcddfee7cc965b1468484d17f9d1d35969ad960ec81b"
 # set up nsswitch.conf for Go's "netgo" implementation
 # - https://github.com/golang/go/blob/go1.9.1/src/net/conf.go#L194-L275
 # - docker run --rm debian:stretch grep '^hosts:' /etc/nsswitch.conf
-RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
+# RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
 RUN echo "https://mirrors.ustc.edu.cn/alpine/v3.9/main" > /etc/apk/repositories
 
 # gcc for cgo

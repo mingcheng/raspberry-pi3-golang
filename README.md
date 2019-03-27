@@ -1,10 +1,10 @@
 # Go Language for Raspberry PI3
 
-这是针对树莓派3b的 Go 语言 Docker 运行容器镜像，相对「半官方」的 [Go 运行镜像](https://hub.docker.com/r/arm32v7/golang)这个镜像优化又以下几个优化点：
+这是针对树莓派3b的 Go 语言 Docker 运行容器镜像，相对「半官方」的 [Go 运行镜像](https://hub.docker.com/r/arm32v7/golang)这个镜像优化了以下几点：
 
 1. 基于 alpine 以及 go 的最新版本编译，比较轻量；
 2. 使用 [resin 提供优化的 go 编译包](https://github.com/balena-io-library/base-images)；
-3. 针对中国环境，apline 这块使用国内清华源镜像。
+3. 针对中国环境，Apline Linux 使用[国内清华源镜像](https://mirrors.tuna.tsinghua.edu.cn/)。
 
 ## 编译和运行镜像
 
